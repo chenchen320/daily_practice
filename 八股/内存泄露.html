@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <button onclick="handleArr()">制造泄露</button>
+</body>
+<script>
+  function handleArr() {
+    let arr1 = new Array(1000000).fill('0')
+    window.addEventListener('resize', () => { console.log(arr1.length) })
+  }
+</script>
+
+</html>

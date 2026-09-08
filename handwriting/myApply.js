@@ -9,6 +9,7 @@ Function.prototype.myApply = function(context,arg){
 
   obj[key] = this
 
+  // 这里要对参数进行判断
   if(arg==null){
      result = obj[key]()
   }else if(typeof arg[Symbol.iterator] == 'function'){

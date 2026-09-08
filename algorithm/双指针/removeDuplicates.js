@@ -2,6 +2,7 @@
  * @param {number[]} nums
  * @return {number}
  */
+// 移除数组当中的重复元素
 var removeDuplicates = function(nums) {
     if(nums.length ==0) {
       return 0;

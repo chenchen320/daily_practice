@@ -17,7 +17,7 @@ class MyPromise {
     }
   }
 
-  static resolve = (val) => {
+  resolve = (val) => {
     if (this.status === PENDING) {
       this.status = FULFILLED
       this.value = val
@@ -27,7 +27,7 @@ class MyPromise {
     }
   }
 
-  static reject = (err) => {
+  reject = (err) => {
     if (this.status === PENDING) {
       this.status = REJECTED
       this.reason = err

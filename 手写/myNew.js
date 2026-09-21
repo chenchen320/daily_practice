@@ -3,7 +3,6 @@ function myNew(Fn,...args){
     throw TypeError('Fn is not a function')
   }
 
-
   let obj =Object.create(Fn.prototype)
   let res = Fn.apply(obj,args)
 

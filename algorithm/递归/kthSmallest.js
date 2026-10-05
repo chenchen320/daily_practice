@@ -3,7 +3,7 @@ let kthSmallest = function(root, k) {
   let ans = 0
 
   function bts(root){
-    if(root === null || count >=K){
+    if(root === null || count >=k){
       return 
     }
     bts(root.left)
